@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Whatsapp web design using Html and css</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="chat">
+            <div class="chat-header">
+                <div class="profile">
+                    <div class="left">
+                        <img src="img/arrow.png" class="arrow"/>
+                        <img src="img/saifamily.jpeg" class="pp"/>
+                        <h2>Hamisika Meenakshi | Annaprashan Ceremony</h2>
+                        <span>online</span>
+                    </div>
+                    <div class="right">
+                        <img src="img/video.png" class="icon"/>
+                        <img src="img/phone.png" class="icon"/>
+                        <img src="img/more.png" class="icon"/>
+                    </div>
+                </div>
+            </div>
+            <div id="chatBox"class="chat-box">
+                <div class="example1 message my-msg">
+                    <div class="ex1"><p>Hey!!!! 💕<br><span class="time">Loading...</span></p></div>
+                    <div class="ex2"><p>I am ready For My First Bowl of Rice, Will You Come To Feed Me? 🍚<br><span class="time"></span></p></div>
+                    <div class="ex3"><p>And Mrs.Rajyalakshmi&Mr.Saikrishna Invite you to the Annaprashan Ceremony...🫶<br><span class="time">Loading...</span></p></div> 
+                </div>
+                <div id="div2" class="message my-msg" style="display: none;">
+                    <div class="chat-box2 message2"><p>🗓️ when is the Ceremony? <span class="time">Loading...</span></p></div>
+                    <div id="ex4"><p>It's on December 22, 2023 <img src="img/emoji-2.png" class="icon2"/> <br><span class="time">Loading...</span></p></div>
+                    <div id="ex5"><p>Try to be there by 10 AM 😎<br><span class="time">Loading...</span></p></div>
+                    <div id="ex6"><p>We are so excited to see you there 🥳<br><span class="time">Loading...</span></p></div> 
+                </div>
+                <div id="div3" class="message my-msg" style="display: none;">
+                    <div class="chat-box2 message2"><p>where it is happening 🤔 <span id="currentTime">Loading...</span></p></div>
+                    <div id="ex7"><p>Venue: Sri venkateswara Swamy Temple, vaikuntapuram, Tenali.<span class="time">Loading...</span></p></div>
+                    <div id="ex8"><p>Find Directions:  <a href="https://maps.app.goo.gl/eD1YrGaQ4f91ScR29" target="_blank">Click Here to goto Maps</a> <span class="time">Loading...</span></p></div>
+                </div>
+                <div id="div4" class="message my-msg" style="display: none;">
+                    <div class="chat-box2 message2"><p>Tell me more 😍 <span class="time">Loading...</span></p></div>
+                    <div id="ex9"><p>Save the Date 🗓️ <span class="time">Loading...</span></p></div>
+                    <div id="ex10" class="message my-msg"><p><img src="img/hamsikamain1.jpeg" class="image" onclick="toggle()"/><span class="time">Loading...</span></p></div>
+                    <div id="ex10" class="message my-msg"><p><img src="img/saifullfamily.jpeg" class="image"/><span class="time">Loading...</span></p></div>
+                    <div id="ex10" class="message my-msg"><p><img src="img/saifamily2.jpeg" class="image"/><span class="time">Loading...</span></p></div>
+                </div>
+                <div id="div5" class="message my-msg" style="display: none;" >
+                    <div class="chat-box2 message2"><p>want to see your pics 🥰 <span class="time">Loading...</span></p></div>
+                    <div id="ex11"><p><img src="img/hamsika1.jpeg" class="image"/><span class="time">Loading...</span></p></div>
+                    <div id="ex12"><p><img src="img/hamsika2.jpeg" class="image"/><span class="time">Loading...</span></p></div>
+                </div>
+                <div id="div6" class="message my-msg" style="display: none;">
+                    <div class="chat-box2 message2"><p>show me more...!! 😉 <span class="time">Loading...</span></p></div> 
+                    <div><p><img src="img/hamsika3.jpeg" class="image"/><span class="time">Loading...</span></p></div>
+                    <div><p><img src="img/hamsika4.jpeg" class="image"/><span class="time">Loading...</span></p></div>
+                    <div><p><img src="img/hamsika5.jpeg" class="image"/><span class="time">Loading...</span></p></div>
+
+                </div>
+                <div id="div7" class="message my-msg" style="display: none;"> 
+                    <div class="chat-box2 message2"><p>One more 🫠 <span class="time">Loading...</span></p></div> 
+                    <div><p><img src="img/hamsika6.jpeg" class="image"/><span class="time">Loading...</span></p></div>
+                </div>
+                <div id="div8" class="message my-msg" style="display: none;">
+                    <div class="chat-box2 message2"><p>Awesome...I'll be there ❤️ <span class="time">Loading...</span></p></div> 
+                    <div><p>Fantastic! We can't wait to celebrate with you. See you on the big day!🥳🥳🥳🥳<span class="time">Loading...</span></p></div>
+                    <div><p>Designer-Manjeeralakshmi 😎 <span class="time">Loading...</span></p></div>
+                    <div><p><img src="img/manjeerapicwithmini.jpeg" class="image"/><span class="time">Loading...</span></p></div>
+                </div>
+                
+
+                
+            </div>        
+            <div class="chat-footer">
+            <div><button class="btn btn1" id="Button1" onclick="showDiv(2)">🗓️ When is the Ceremony?</button></div>
+            <div><button class="btn btn2" id="Button2"onclick="showDiv(3)">Where is it happening 🤔</button></div>
+            <div><button class="btn btn3" id="Button3"onclick="showDiv(4)">Tell me more 😍</button></div> 
+            <div><button class="btn btn4" id="Button4"onclick="showDiv(5)">Want to see your pics 🥰</button></div>  
+            <div><button class="btn btn5" id="Button5"onclick="showDiv(6)">Show me more...!! 😉</button></div>  
+            <div><button class="btn btn6" id="Button6"onclick="showDiv(7)">One more 🫠</button></div>  
+            <div><button class="btn btn7" id="Button7"onclick="showDiv(8)">Awesome...I'll be there ❤️</button></div>                 
+            </div>
+    </div>
+    </div>
+        
+    
+</body>
+</html>

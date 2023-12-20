@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Outfit:wght@100;200;300;400;500;600;700;800;900&family=Roboto+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500&family=Roboto+Mono:ital,wght@0,200;0,300;0,400;0,500;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Roboto Mono;
+    overflow-x: hidden;
+    /* overflow-y: hidden; */
+    max-width: 500px;
+
+}
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0 auto;
+    min-height: 100vh;
+    
+}
+.container{
+    width: 500px;
+    max-width: 576px;
+    margin: auto;
+    font-size: 18px;
+}
+.chat{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background: #f1f0e8;
+}
+.chat-header{
+    display: flex;
+    cursor:pointer;
+}
+.profile{
+    width:100%;
+    background: #036055;
+    display: flex;
+    align-items: center;
+    height: 60px;
+    padding:0px 10px;
+    position: relative;
+    
+}
+.profile .pp{
+    width: 50px;
+    display: inline-block;
+    border-radius:45%;
+    margin-left: 25px;
+    margin-bottom: 10px;
+}
+.profile .arrow{
+    display: inline-block;
+    width: 17px;
+    position: absolute;
+    top: 19px;
+    cursor: pointer;
+}
+.profile h2{
+    display: inline-block;
+    line-height: 65px;
+    vertical-align: bottom;
+    color:#fff;
+    font-size: 11px;
+    font-family: sans-serif;
+}
+.profile span{
+    color:#ccc;
+    position: absolute;
+    top: 38px;
+    left: 90px;
+    font-size:10px;
+}
+.right .icon{
+    display: inline-block;
+    width: 25px;
+    margin-left: 1px;
+}
+.profile .left{
+    flex:1;
+}
+
+
+.chat-box{
+    flex:1;
+    background-image:url("img/imageofthree.jpg");
+    position:relative;
+    width: 100%;
+    height: calc(60% - 120px);
+    padding: 10px;
+    overflow-y: auto;
+}
+
+.chat-box2{
+    padding-left: 200px;
+    flex: 1;
+    width:100%;
+    max-width: 500px;
+}
+
+.chat-box2 p{
+    word-break:break-all;
+    font-size: 14px;
+    background: #dcf8c6; 
+    
+}
+
+.message{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    /* margin: 5px 5px; */
+    transform:translateY(10px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    padding:20px;
+    word-wrap: break-word;
+    
+}
+
+.message p{
+    position: relative;
+    right: 0;
+    text-align: left;
+    max-width: 50%;
+    padding: 13px;
+    background: #dcf8c6;
+    border-radius: 10px;
+    font-size: 0.8em;
+    margin: 7px;
+    
+}
+.message2 p{
+    position: relative;
+    right: 0;
+    text-align: left;
+    padding: 10px;
+    background: #eff4ec;
+    border-radius: 10px;
+    font-size: 0.7em;
+    margin: 7px;
+    width: 600px;
+    max-width: 100%;
+}
+.image{
+    max-width: 100%;
+    margin-top: 10px;
+}
+.icon2{
+    display: inline-block;
+    width: 17px;   
+}
+.message p::before{
+    content:"";
+    position: absolute;
+    top:0;
+    right: -10px;
+    width: 20px;
+    height: 20px;
+    background: linear-gradient(100deg, #dcf8c6 0%, #dcf8c6 50%, transparent 50%, transparent);
+}
+.message p span{
+    display: block;
+    margin-top: 5px;
+    font-size: 0.85em;
+    opacity: 0.5;
+    text-align: right;
+}
+.span{
+    display: block;
+    margin-top: 5px;
+    font-size: 0.85em;
+    opacity: 0.5;
+}
+.btn{
+    height: 35px;
+    width: 300px;
+    margin-left: 15px;
+    border-radius: 12px;
+    border-color: transparent;
+    cursor: pointer;
+    font-size: 15px;
+    display: inline-block;
+    
+        
+}
+/* .btn1{
+    display: none
+} */
+.btn2{
+    display: none;
+}
+.btn3{
+    display: none;
+}
+.btn4{
+    display: none;
+}
+.btn5{
+    display: none;
+}
+.btn6{
+    display: none;
+}
+.btn7{
+    display: none;
+}
+.chat-footer{
+    background:transparent;
+    position: fixed;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow-y:hidden;
+    bottom:0;
+    width:499px;
+    border-radius:5px ;
+    margin-top: auto;
+}
+.example2{
+    display: none;
+}
+.example3{
+    display: none;
+}
+.example4{
+    display: none;
+}
+.example5{
+    display: none;
+}
+.example6{
+    display: none;
+}
+.example7{
+    display: none;
+}
+.example8{
+    display: none;
+}
